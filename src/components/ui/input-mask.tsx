@@ -36,9 +36,9 @@ const InputMask = ({
                         itemType="button"
                         disabled={sendOtpSuccess}
                         variant="small"
-                        className={`flex !py-[5px] ${
+                        className={`flex !py-[5px] text-sm ${
                             sendOtpSuccess &&
-                            ` text-white bg-blue-400 dark:bg-blue-500 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center"`
+                            ` !bg-gray-500 !cursor-not-allowed opacity-70`
                         } items-center gap-x-3`}
                     >
                         {isLoading ? <Loader /> : "Send"}

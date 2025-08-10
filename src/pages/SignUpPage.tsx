@@ -82,9 +82,9 @@ const SignUpPage = () => {
                             variant="small"
                             disabled={!nextStep}
                             onClick={incrementCurrentStep}
-                            className={`flex ml-auto mr-10 items-center gap-x-3 ${
+                            className={`flex ml-auto mr-10 items-center text-sm gap-x-3 ${
                                 !nextStep
-                                    ? " text-white bg-blue-400 dark:bg-blue-500 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                                    ? " !bg-gray-500 !cursor-not-allowed px-5 py-2.5 opacity-70"
                                     : ""
                             }`}
                         >
