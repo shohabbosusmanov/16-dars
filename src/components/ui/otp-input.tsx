@@ -17,8 +17,7 @@ const OtpInput = ({
     setIsOtpVerified,
 }: Props) => {
     const [otp, setOtp] = useState("");
-    const { mutateAsync, isError, isPending, error, isSuccess } =
-        useVerifyOtp();
+    const { mutateAsync, isSuccess } = useVerifyOtp();
     useEffect(() => {
         if (otp.length == 4) {
             mutateAsync({ phone_number, code: otp });
